@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <div ng-app="mainApp" ng-controller="student.controller">
+        <h1>Student Information</h1>
+        Enter First Name: <input type="text" ng-model="student.firstName">
+        <br>
+        Enter Last Name: <input type="text" ng-model="student.lastName">
+        <br>
+        Your Output: {{student.fullName()}}
+    </div>
+    <script>
+       angular.module('mainApp', [])
+        .controller('student.controller', function($scope) {
+            $scope.student = {
+                firstName: '',
+                lastName: '',
+                fullName: function() {
+                    return this.firstName + ' ' + this.lastName;
+                }
+            };
+        }); 
+    </script>
+</body>
+</html>
