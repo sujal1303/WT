@@ -1,0 +1,27 @@
+<?xml version="1.8" encoding="UTF-8"?>
+<!DOCTYPE employee[
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT Dob (#PCDATA)>
+<!ELEMENT Post (#PCDATA)>
+]>
+
+<employee>
+<name>Mrinal</name>
+<salary>100000</salary>
+<Dob>27 JUlY 2004</Dob>
+<Post>Software Engineer</Post  
+<name>Sanika</name>
+<salary>50000</salary>
+<Dob>12 JUNE 2004</Dob>
+<Post>Web Developer</Post>  
+<name>Swapnali</name>
+<salary>50000</salary>
+<Dob>5 OCTOBER 2004</Dob>
+<Post>Software Tester</Post>
+<name>Nikita Mali</name>
+<salary>70000</salary>
+<Dob>17 October 2004</Dob>
+<Post>HR</Post>  
+</employee>
+
